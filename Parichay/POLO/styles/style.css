@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(19,21,40);
+}
+.TheShops{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 70px 0;
+    width: 100%;
+    height: auto;
+
+    /* background-color: rgb(44, 85, 79); */
+}
+.text{
+    /* margin: 20px; */
+    padding: 20px;
+}
+.TheShops .text img{
+    width: 350px;
+    height: 350px;
+}
+.container{
+    width: auto;
+}
+.container .slideitems{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+    overflow-x: auto;
+}
+.slideitems::-webkit-scrollbar{
+    width: 0;
+}
+.slideitems img{
+    width: 420px;
+    height: 200%;
+    line-height: 600px;
+    cursor: pointer;
+}
+.outerwearShop{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.outerwearShop .ele{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwa6e8bc47/img/202409/09192024-eu-mpolo-blp/0917_m_polo_hub_c03b_img.jpg");
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+.outerwearShop .ele > p{
+    width: 550px;
+    font-size: large;
+    letter-spacing: 1px;
+    line-height: 30px;
+    justify-items: center;
+    font-family: sans-serif;
+}
+.outerwearShop .vid video{
+    width: auto;
+    height: 100%;
+    cursor: pointer;
+}
+.ele #first img{
+    width: 240px;
+}
+.ele #second h1{
+    font-size: 50px;
+    font-family: 'Times New Roman';
+    font-weight: 100;
+}
+.ele a{  
+    position: relative;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: aliceblue;
+    text-underline-offset: 15px;
+
+}
+.ele a::after{  
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+.ele a:hover::after {
+    transform: scalex(1);
+}
+.thequiltedgilet{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw91d0ced3/img/202409/09192024-eu-mpolo-blp/0917_m_polo_hub_c04_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900px;
+    padding: 80px 60px;
+}
+.container2{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw81c603c9/img/202409/09192024-eu-mpolo-blp/0917_m_polo_hub_c04a_img.jpg");
+    /* z-index: 1; */
+    /* position: relative; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elements{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+.elements > h3{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    margin-left: 100px;
+}
+.elements > p{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 110px;
+    width: 360px;
+    line-height: 30px;
+    /* letter-spacing: 1px; */
+}
+.elements > a{
+    position: relative;
+    /* text-decoration: ; */
+    font-size: 10px;
+    font-weight: 400;
+    font-family: sans-serif;
+    /* font-size: small; */
+    color: aliceblue;
+    text-underline-offset: 15px;
+    margin-left: 100px;
+}
+.jacket{
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    padding: 60px 50px;
+}
+.container3{
+    position: relative;
+    /* background-color: white; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    
+}
+.container3 .img1{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw069b9701/img/202409/09192024-eu-mpolo-blp/0917_m_polo_hub_c05a_img.jpg");
+    background-size: cover;
+    cursor: pointer;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+}
+.container3 .img2{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw61a9d2c0/img/202409/09192024-eu-mpolo-blp/0917_m_polo_hub_c05b_img.jpg");
+    background-size: cover;
+    cursor: pointer;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+}
+.container3 .img3{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw78b215cf/img/202409/09192024-eu-mpolo-blp/0917_m_polo_hub_c05c_img.jpg");
+    background-size: cover;
+    cursor: pointer;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+}
+.contents3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+}
+.contents3 > p{
+    font-size: small;
+}
+.contents3 > h3{
+    font-size: x-large;
+    font-weight: 200;
+}
+.contents3 > a{
+    font-size: xx-small;
+    font-weight: 600;
+    font-family: sans-serif;
+    /* font-size: small; */
+    color: aliceblue;
+    text-underline-offset: 15px;
+}
+.theshirtShop{
+    width: auto;
+    height: 900px;
+    background-color: blueviolet;
+}
+.the_icons{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px 70px;
+    /* margin-top: 80px; */
+}
+.image_contener{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwfbfaaaee/img/202408/08202024-eu-ts-men-hub/0820_m_polo_hub_c03_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.image_contener .elements{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* margin-bottom: 50px; */
+    font-family: sans-serif;
+}
+.image_contener .elements .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+}
+.image_contener .elements .nw_ti{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: sans-serif;
+}
+.nw_ti > p{
+    font-size: 12px;
+}
+.links > a{
+    font-size: x-small;
+    font-weight: 600;
+    font-family: sans-serif;
+    /* font-size: small; */
+    color: aliceblue;
+    text-underline-offset: 12px;
+}
+.nw_ti > h3{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Fenice ITC W01 Regular';
+    src: url('fonts/FeniceITCW01-Regular.woff2') format('woff2'),
+         url('fonts/FeniceITCW01-Regular.woff') format('woff'); */
+    font-weight: 100;
+    letter-spacing: 20px;
+}
+.coat{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 70px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.im_container{
+    position: relative;
+    /* background-color: white; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    
+}
+.im_container .img1{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw9c637a67/img/202408/08202024-eu-ts-men-hub/0820_m_polo_hub_c04a_img.jpg");
+    background-size: cover;
+    cursor: pointer;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    color: white;
+}
+.im_container .img2{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwe0739a53/img/202408/08202024-eu-ts-men-hub/0820_m_polo_hub_c04b_img.jpg");
+    background-size: cover;
+    cursor: pointer;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    color: white;
+}
+.im_container .img3{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw36e6b050/img/202408/08202024-eu-ts-men-hub/0820_m_polo_hub_c04c_img.jpg");
+    background-size: cover;
+    cursor: pointer;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    color: white;
+}
+.im_container .img4{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw90143f65/img/202408/08202024-eu-ts-men-hub/0820_m_polo_hub_c04d_img.jpg");
+    background-size: cover;
+    cursor: pointer;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    color: white;
+}
+.contents4{
+    margin-left: 30px;
+    margin-bottom: 35px;
+}
+.contents4 span{
+    font-size: small;
+}
+.contents4 h2{
+    font-size: medium;
+    font-weight: 400;
+}
+
+
