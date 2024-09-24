@@ -10,14 +10,14 @@ body {
 }
 
 .hero {
-    height: 90vh;
+    height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     overflow: hidden;
-    margin: 30px 0px 30px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .hero-video {
@@ -45,7 +45,7 @@ body {
     text-align: center;
     position: relative;
     z-index: 3;
-    margin-top: 500px;
+    margin-top: 300px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 400;
 }
@@ -82,4 +82,317 @@ body {
 
 .button:hover {
     transform: translateY(-8px); /* Moves the button 5px upwards */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px 30px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+
+  .button-container {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .button-container:hover {
+    background-color: black;
+    color: white;
+  }
+
+.container1 #quotes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    max-width: 900px;
+    padding: 20px;
+    margin-left: 300px;
+}
+
+#container1_article{
+    letter-spacing: 2px;
+    line-height: 1.8;
+    text-transform: uppercase;
+}
+
+.container2 {
+    position: relative;
+    max-width: 100vw;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Background Image */
+.background-image img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Ensure the background image covers the whole screen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Send background image behind other elements */
+}
+
+/* Text Overlay on Top of the Background */
+.text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 1; /* Position above the background image */
+}
+
+/* Smaller Images Overlaid on Background */
+.small-images {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    z-index: 2; /* Ensure they appear above the background */
+    padding-top: 40%;
+}
+
+/* Each Smaller Image Styling */
+.overlay-image {
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* AOS Class for Fade-in Effect */
+[data-aos="fade-up"] {
+    opacity: 1;
+}
+
+.container1 #quotes_bottom {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: 150px;
+    margin-top: 350px;
+    font-size: 30px;
+}
+
+.container3_video {
+    position: absolute;
+    top: 400;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.container3 .container3-content {
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    margin-top: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60vb;
+}
+
+.container3 h1 {
+    font-size: 6rem;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.container3-article{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container3-article #article1 { 
+    position: absolute; /* Keep article content relative */
+    z-index: 2; /* Ensure article appears above the video */
+    color: black; /* Text color for the article */
+    margin-top: 700px; /* Space between the video and the article */
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 250px 40px 250px;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.gallery {
+    width: 100%; /* Full width */
+    position: absolute; /* Position relative for absolute children */
+    margin-top: 900px;
+    overflow: hidden
+}
+
+.sliding-images {
+    display: flex; /* Use flexbox for layout */
+    animation: slide 20s linear infinite; /* Animation for sliding */
+}
+
+.sliding-images img {
+    margin-right: 80px; /* Space between images */
+    /* Adjust width as needed */
+    margin-bottom: 80px;
+    height: auto;
+    width: auto;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%); /* Start outside the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End outside the left */
+    }
+}
+
+.container-looks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: 150px;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.container-looks #look-heading{
+    position: absolute;
+    margin-top: 1550px;
+}
+
+.container-looks img{
+    position: relative;
+    margin-top: 1500px;
+    width: 250px; /* Explicitly set the image width */
+    height: 350px; /* Explicitly set the image height */
+    object-fit: cover; /* Ensures images fit within the given dimensions without distortion */
+    display: block; /* Ensure images are block-level elements */
+}
+
+.container-looks .looks-images{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content #view_all {
+    padding: 0.75rem 2.5rem;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 20px;
+    color:black;
+    font-size: 0.8rem;
+}
+
+.content .input-field input[type="email"] {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#arrow{
+    max-height: 50px;
+    max-width: auto;;
+    padding: 0px;
+    margin: 0px;   
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content .input-field{
+    display: flex;
+    flex-direction: row;
+}
+
+.style_notes{
+    display: flex;
+    flex-direction: row;
+}
+
+.style_notes .notes{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.style_notes .notes h1{
+    color: #fff;
+    font-size: 80px;
+    margin-top: 100px;
+    max-width: 300px;
+    margin-left: 250px;
+}
+
+.style_notes .notes p{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 200px 20px 200px;
 }
