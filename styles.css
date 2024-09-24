@@ -1,0 +1,85 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    margin: 30px 0px 30px 0px;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 2;
+}
+
+.hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    margin-top: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 400;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    /* text-decoration: underline; */
+    gap: 1rem;
+}
+
+.button {
+    padding: 0.75rem 2.5rem;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.button:hover {
+    transform: translateY(-8px); /* Moves the button 5px upwards */
+}
