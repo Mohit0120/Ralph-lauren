@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Product Grid Styling */
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 20px 40px;
+}
+
+/* Product Grid Left Styling (Hilding Frame) */
+.product-grid-left {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 20px 40px;
+}
+
+/* Flex container for left and right product */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Individual Product Styling */
+.product-item {
+    text-align: left;
+    width: 33%;
+    margin-right: 3px;
+    position: relative;
+}
+
+/* Product item last child margin */
+.product-item:last-child {
+    margin-right: 0;
+}
+
+/* Image container for each product */
+.image-container {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden; /* Ensures no overflow of images */
+}
+
+/* Default and Hover Image */
+.image-container img {
+    width: 100%; /* Ensure full width of container */
+    height: auto; /* Keep height auto to maintain aspect ratio */
+    transition: opacity 0.5s ease-in-out;
+    display: block;
+    margin: 0 auto; /* Centering the images */
+    object-fit: cover; /* Ensures the image fits nicely */
+}
+
+/* Hover Effect for Default and Hover Images */
+.default-image {
+    opacity: 1;
+}
+
+.hover-image {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure it fully covers the container */
+    height: 100%; /* Keep the image height consistent */
+}
+
+.image-container:hover .default-image {
+    opacity: 0;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+}
+
+/* Overlay Text */
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay-text {
+    opacity: 1;
+    bottom: 120px;
+    height: 25px;
+    border-radius: 0;
+    font-size: 15px;
+}
+
+/* Circle Icon */
+.circle-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .circle-icon {
+    opacity: 1;
+}
+
+/* Quickshop Button */
+.quickshop {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 1px solid #333;
+    font-size: 12px;
+    color: #333;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.image-container:hover .quickshop {
+    opacity: 1;
+}
+
+.image-container:hover .quickshop:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Product Text Styling */
+.product-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Product name and heart icon container */
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+/* Product Text */
+.product-item p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product-item p:nth-child(4) {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Left Aligned Image (Hilding Frame) */
+.image-container-left {
+    flex: 0 0 50%; /* 50% of the width */
+    padding-right: 20px;
+}
+
+.only_img_left {
+    width: 215%; /* Full width */
+    height: 437px;
+    object-fit: cover; /* Keeps aspect ratio */
+}
+#fs23{
+    height: 452px;
+}
