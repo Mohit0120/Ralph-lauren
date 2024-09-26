@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: auto;
+
+}
+.purpleLbel{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202409/09192024-eu-pl-hub-fall/0917_pl_hub_c02_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 200px;
+    padding: 50px 50px;
+}
+.purpleLbel .contents{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 200px;
+    height: auto;
+    color: white;
+    font-family: BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contents > h3{
+    font-weight: 400;
+    font-size: x-large;
+    letter-spacing: 10px;
+}
+.contents > p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+}
+.contents > a{
+    font-size: x-small;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    text-underline-offset: 12px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+   
+}
+
+.shop-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    height: 90%;
+    overflow-x: scroll;
+}
+
+.shop-item {
+    position: relative;
+    width: 440px;
+    height: 100%;
+    /* margin: 10px 0; */
+}
+
+.shop-item img {
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    color: white;
+    padding: 10px;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 200;
+    font-family: "Libre Caslon Text", serif;
+
+}
+
+
+
+.shopByCategory{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202406/06272024-eu-m-pl-hub/0627_pl_hub_c03_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin: 10px 0 3px 0;
+}
+.shop{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.shop h2{
+    font-family: BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    letter-spacing: 14px;
+}
+.shop ul{
+    display: flex;
+    gap: 40px;
+}
+.shop ul li{
+    font-family: BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    font-size: x-small;
+    letter-spacing: 1px;
+}
+.shop ul li a{
+    font-size: x-small;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    text-underline-offset: 12px;
+}
+
+.fall2024{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202409/09192024-eu-pl-hub-fall/0917_pl_hub_c04_img.jpg");
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 10px;
+}
+.outerbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+.outerbox h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(221, 221, 221);
+    font-size: x-large;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.article{
+    font-family: "Founders Grotesk text Regular", Arial, Helvetica, sans-serif;
+    font-size: 0.938em;
+    line-height: 1.6em;
+    padding-top: 0.667em;
+    color: azure;
+    font-weight: 300;
+}
+.shopnow{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.shopnow a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-underline-offset: 12px;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202409/09192024-eu-pl-hub-fall/0917_pl_hub_c05_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2000px;
+    width: 100%;
+    padding: 90px 130px;
+}
+.parent-1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.div1{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202409/09192024-eu-pl-hub-fall/0917_pl_hub_c05a_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.div2{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202409/09192024-eu-pl-hub-fall/0917_pl_hub_c05b_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.parent-2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.div3{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202409/09192024-eu-pl-hub-fall/0917_pl_hub_c05c_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.div4{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202409/09192024-eu-pl-hub-fall/0917_pl_hub_c05d_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.grid h3{
+    margin: 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: small;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+.label{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202404/04112024-eu-m-pl-hub/0411_pl_hub_c09_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+    margin: 15px 0 2px 0;
+}
+.Fall2024{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202406/06272024-eu-m-pl-hub/0627_pl_hub_c04_img.jpg");
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 10px;
+}
+.article-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 400px;
+    font-family: "Founders Grotesk text Regular", Arial, Helvetica, sans-serif;
+    font-size: 0.938em;
+    line-height: 1.6em;
+    padding-top: 0.667em;
+    color: azure;
+    font-weight: 300;
+}
+
+.grid2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202409/09192024-eu-pl-hub-fall/0917_pl_hub_c05_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2000px;
+    width: 100%;
+    padding: 90px 130px;
+}
+.parent-3{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.div5{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202406/06272024-eu-m-pl-hub/0627_pl_hub_c05a_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.div6{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202406/06272024-eu-m-pl-hub/0627_pl_hub_c5b_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.parent-4{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.div7{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202406/06272024-eu-m-pl-hub/0627_pl_hub_c05c_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.div8{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202406/06272024-eu-m-pl-hub/0627_pl_hub_c05d_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.grid2 h3{
+    margin: 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: small;
+    letter-spacing: 3px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.Fall-2024{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202404/04112024-eu-m-pl-hub/0411_pl_hub_c10_img.jpg");
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 10px;
+}
+.article-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 600px;
+    font-family: "Founders Grotesk text Regular", Arial, Helvetica, sans-serif;
+    font-size: 0.938em;
+    line-height: 1.6em;
+    padding-top: 0.667em;
+    color: azure;
+    font-weight: 300;
+}
+.label-1{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202404/04112024-eu-m-pl-hub/0411_pl_hub_c09_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+}

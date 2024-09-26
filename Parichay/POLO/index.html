@@ -6,30 +6,140 @@
   <title>Document</title>
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    
+
+  </style>
+
 </head>
 <body>
+  <!-- Splide Slider Container -->
+  <div id="video-slider" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+
+        <!-- Slide 1 -->
+        <li class="splide__slide">
+          <video autoplay muted loop>
+            <source src="//video.ralphlauren.com/202409/20240917-men-polo-hub-lp/RL027_TIER2_Mens_Compilation_1440x720.mp4" type="video/mp4">
+          </video>
+          <div class="overlay-1">
+            <img src="https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f5/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw9b74d894/img/Brand_Logo_Library/POLO/2018_polo_white_logo.svg?yocs=4G_4V_4N_4W_" alt="" width="1000px">
+            <p>Outer Wear Shop</p>
+            <a href="#">SHOP NOW</a>
+          </div>
+        </li>
+
+        <!-- Slide 2 -->
+        <li class="splide__slide">
+          <video autoplay muted loop>
+            <source src="//video.ralphlauren.com/202408/20240820-men-polo-hub-lp/Video-Men-DSK.mp4" type="video/mp4">
+           
+          </video>
+          <div class="overlay-1">
+            <!-- <img src="https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f4/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727334605943/img/Brand_Logo_Library/POLO/2021_ralph_lauren_logo_white.svg?yocs=4G_4J_4V_4W_" alt="" width="1000px"> -->
+            <h2>Ralph’s New York</h2>
+            <p>Much like the city’s beloved landmarks, Polo Icons reflect the allure of timeless style amid the rush of ever-changing landscapes</p>
+            <a href="#">SHOP NOW</a>
+          </div>
+        </li>
+
+        <!-- Slide 3 -->
+        <li class="splide__slide">
+          <img src="https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f5/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwbcabd890/img/202409/09062024-eu-m-polo-mb/0906_m_polo_hub_c02b_img.jpg?yocs=4G_4V_4N_4W_" alt="">
+          <div class="overlay-1">
+            <img src="https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f5/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dweabe2d5c/img/Brand_Logo_Library/POLO/2021_polo_logo_light_gold.svg?yocs=4G_4V_4N_4W_" alt="" width="1000px">
+            <div class="rrr">
+              <h2>Montana University</h2>
+              <!-- <p>accessories</p> -->
+              <a href="#">SHOP NOW</a>
+            </div>
+
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <!-- <button class="splide__arrow splide__arrow--prev">Previous</button>
+    <button class="splide__arrow splide__arrow--next">Next</button> -->
+  </div>
+
+  <!-- Initialize Splide Slider -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#video-slider', {
+        type: 'loop',
+        perPage: 1,
+        autoplay: true,
+        interval: 20000,
+      }).mount();
+    });
+  </script>
+  
   <section class="TheShops">
     <div class="text">
       <img src="./assets/image.png" alt="text">
     </div>
-
+    
     <div class="container">
-      <div class="slideitems">
-        <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw736d6f9b/img/202409/09122024-eu-m-hub/0910_m_polo_hub_c02b_img.jpg" alt="">
-        <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw2ccab689/img/202409/09192024-eu-mpolo-blp/0917_m_polo_hub_c02b_img.jpg" alt="">
-        <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwe662646a/img/202409/09122024-eu-m-hub/0910_m_polo_hub_c02a_img.jpg" alt="">
-        <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwb156e79d/img/202409/09062024-eu-m-polo-mb/0906_m_polo_hub_c03b_img.jpg" alt="">
-        <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw30a73dae/img/202405/05232024-eu-m-polo-hub/0521_m_polo_coastal_summer_hub_c02b_img.jpg" alt="">
+      <div class="shop-section">
+          <div class="shop-item">
+              <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw736d6f9b/img/202409/09122024-eu-m-hub/0910_m_polo_hub_c02b_img.jpg" alt="The Sweater Shop">
+              <div class="overlay">
+                  <h2>The Sweater Shop</h2>
+              </div>
+          </div>
+          <div class="shop-item">
+              <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw2ccab689/img/202409/09192024-eu-mpolo-blp/0917_m_polo_hub_c02b_img.jpg" alt="Outerwear Shop">
+              <div class="overlay">
+                  <h2>Outerwear Shop</h2>
+              </div>
+          </div>
+          <div class="shop-item">
+              <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwe662646a/img/202409/09122024-eu-m-hub/0910_m_polo_hub_c02a_img.jpg" alt="Outerwear Shop">
+              <div class="overlay">
+                  <h2>The Shirt Shop</h2>
+              </div>
+          </div>
+          <div class="shop-item">
+              <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwb156e79d/img/202409/09062024-eu-m-polo-mb/0906_m_polo_hub_c03b_img.jpg" alt="Outerwear Shop">
+              <div class="overlay">
+                  <h2>Expedition Shop</h2>
+              </div>
+          </div>
+          <div class="shop-item">
+              <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw30a73dae/img/202405/05232024-eu-m-polo-hub/0521_m_polo_coastal_summer_hub_c02b_img.jpg" alt="Outerwear Shop">
+              <div class="overlay">
+                  <h2>Polo Bear Shop</h2>
+              </div>
+          </div>
       </div>
     </div>
-
   </section>
 
   <section class="outerwearShop">
     <div class="vid">
-      <video controls="loop" autoplay>
+      <video autoplay muted loop>
         <source src="./assets/RL027_TIER2_Mens_Town_&_Country_1_720x720.mp4">
+
+        <div class="icon">
+          <i class="fa-regular fa-circle-pause"></i>
+        </div>
       </video>
+      <div class="icon">
+
+      </div>
     </div>
     <div class="ele">
       <div id="first">
@@ -86,9 +196,14 @@
   </section>
 
   <!-- carousel  -->
-  <section class="theshirtShop">
-
+  <section class="end-1">
+    <div class="last">
+      <img src="https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f5/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dweabe2d5c/img/Brand_Logo_Library/POLO/2021_polo_logo_light_gold.svg?yocs=4G_4V_4N_4W_" alt="">
+      <h3>The Sweater Shop</h3>
+      <a href="#">SHOP NOW</a>
+    </div>
   </section>
+
   <!-- carousel end -->
 
   <section class="the_icons">
@@ -136,7 +251,34 @@
     </div>
   </section>
 
+  <section class="montana_university">
+    <div class="heading">
+      <div class="quality">Finest Quality</div>
+      <img src="https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f3/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw16e02635/img/202408/08152024-eu-m-heritage-icons-mb/0815_m_polo_heritage_icons_plp_diamond_icon.png?yocs=4G_4V_4N_4W_" alt="logo">
+      <h3>Montana University</h3>
+      <p>A wilderness weekend on the fringe of campus. A trek over dusty roads, wide river valleys, and forgotten trails. As the sun fades beyond the Rockies, we study the rustic beauty of life out West</p>
+      <div class="anc">
+        <!-- <span></span> -->
+        <a href="">SHOP NOW</a>
+      </div>
+    </div>
+    <div class="container6">
+      <div class="contents10">
+        <h2>The Plaid Tweed</h2>
+      <h2>Newsboy Jacket</h2>
+      <p>Polo’s take on a vintage newsboy jacket features plaid wool woven by Magee 1866, which has been creating authentic tweeds in Ireland for more than 150 years</p>
+      <a href="#">SHOP NOW</a>
+      </div>    
+    </div>
+  </section>
 
+  <section class="end">
+    <div class="last">
+      <img src="https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f3/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw9b74d894/img/Brand_Logo_Library/POLO/2018_polo_white_logo.svg?yocs=4G_4V_4N_4W_" alt="">
+      <h3>Expedition Shop</h3>
+      <a href="#">SHOP NOW</a>
+    </div>
+  </section>
 
 </body>
 </html>
