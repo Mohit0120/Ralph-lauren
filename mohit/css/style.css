@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     width: 100%;
     height: 100%;
-    font-family: RL_DroidKufi ,grotesk, Helvetica, Arial, sans-serif;
+    font-family: RL_DroidKufi, grotesk, Helvetica, Arial, sans-serif;
 }
 
 @font-face {
@@ -22,7 +23,7 @@ html,body{
     src: url(../fonts/DroidKufi-Regular.ttf);
 }
 
-.banner{
+.banner {
     width: 100%;
     height: 7vh;
     background-color: #041F3A;
@@ -33,7 +34,7 @@ html,body{
     padding: 0 3.75em;
 }
 
-.banner-text{
+.banner-text {
     display: flex;
     justify-self: center;
     align-items: center;
@@ -41,16 +42,16 @@ html,body{
     margin-left: 35px;
 }
 
-.banner-text p{
+.banner-text p {
     font-size: 11.5px;
     letter-spacing: 1px;
 }
 
-.banner-center-underline{
+.banner-center-underline {
     margin-left: 4px;
 }
 
-.banner-center-underline a{
+.banner-center-underline a {
     display: flex;
     align-items: center;
     font-size: 11.5px;
@@ -58,58 +59,198 @@ html,body{
     color: white;
 }
 
-.banner-right{
+.banner-right {
     justify-self: right;
     grid-area: r;
     display: flex;
     gap: 22px;
 }
 
-.banner-right a{
+.banner-right a {
     text-decoration: none;
     font-size: 11.5px;
     color: white;
     letter-spacing: 1px;
 }
 
-.banner-icon{
+.banner-icon {
     display: flex;
     align-items: center;
 }
 
-.banner-icon i{
+.banner-icon i {
     font-size: 16px;
     margin-right: 5px;
 }
 
-nav{
+nav {
+    position: sticky;
     width: 100%;
-    height: 11.5vh;
+    height: 8vh;
     background-color: #041F3A;
     padding: 0 3.5em;
     display: flex;
     align-items: center;
+    z-index: 10;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: white;
 }
 
-nav a h1{
+nav a h1 {
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 1.6em;
     letter-spacing: 8px;
 }
 
-.nav-links{
+.nav-links {
     margin-left: 2.8em;
     display: flex;
     gap: 1.5em;
 }
 
-.nav-links > a{
+.nav-links>.nav-dropdown>a {
     font-size: 11.5px;
     letter-spacing: 1px;
 }
+
+.nav-dropdown {
+    /* position: relative; */
+    display: inline-block;
+}
+
+.drop-btn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-content {
+    position: absolute;
+    width: 100vw;
+    height: 26.8em;
+    /* display: none; */
+    position: absolute;
+    left: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /* display: flex; */
+    top: 8vh;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-dropdown:hover .drop-btn {
+    /* background-color: #3e8e41; */
+}
+
+.dropdown .dropdown-left {
+    width: calc(100% / 4);
+    height: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dropdown .dropdown-left .drop-link {
+    height: 80%;
+    width: 80%;
+    /* background-color: #dadada; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dropdown .dropdown-left .drop-link .sub-drop>.link {
+    font-family: "Playfair Display", serif;
+    /* background-color: #3e8e41; */
+    padding: 0;
+    color: #505050;
+}
+
+.sub-drop-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.sub-drop{
+    position: relative;
+    display: inline-block;
+}
+
+.sub-dropdown-content{
+    /* display: none; */
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+    top: 0;
+    right: 0;
+}
+
+.sub-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.sub-dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+.sub-drop:hover .sub-dropdown-content{
+    display: block;
+}
+
+.sub-drop:hover .sub-drop-btn{
+    background-color: #3e8e41;
+}
+
+
+
+/* .dropdown-right{
+    width: 75%;
+    height: 100%;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right-sec{
+    width: 80%;
+    height: 80%;
+    background-color: #04AA6D;
+} */
