@@ -81,7 +81,7 @@ body {
 }
 
 .button:hover {
-    transform: translateY(-8px); /* Moves the button 5px upwards */
+    transform: translateY(-8px);
 }
 
 .nav-container {
@@ -147,21 +147,20 @@ body {
 .container2 {
     position: relative;
     max-width: 100vw;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
 }
 
 /* Background Image */
 .background-image img {
     width: 100%;
     height: 100vh;
-    object-fit: cover; /* Ensure the background image covers the whole screen */
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; /* Send background image behind other elements */
+    z-index: -1;
 }
 
-/* Text Overlay on Top of the Background */
 .text-overlay {
     position: absolute;
     top: 20%;
@@ -171,7 +170,7 @@ body {
     font-size: 2.5rem;
     text-align: center;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    z-index: 1; /* Position above the background image */
+    z-index: 1; 
 }
 
 /* Smaller Images Overlaid on Background */
@@ -181,7 +180,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    z-index: 2; /* Ensure they appear above the background */
+    z-index: 2; 
     padding-top: 40%;
 }
 
@@ -250,10 +249,10 @@ body {
 }
 
 .container3-article #article1 { 
-    position: absolute; /* Keep article content relative */
-    z-index: 2; /* Ensure article appears above the video */
-    color: black; /* Text color for the article */
-    margin-top: 700px; /* Space between the video and the article */
+    position: absolute;
+    z-index: 2;
+    color: black;
+    margin-top: 700px; 
     background: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 250px 40px 250px;
@@ -263,20 +262,19 @@ body {
 }
 
 .gallery {
-    width: 100%; /* Full width */
-    position: absolute; /* Position relative for absolute children */
+    width: 100%; 
+    position: absolute; 
     margin-top: 900px;
     overflow: hidden
 }
 
 .sliding-images {
-    display: flex; /* Use flexbox for layout */
-    animation: slide 20s linear infinite; /* Animation for sliding */
+    display: flex;
+    animation: slide 20s linear infinite;
 }
 
 .sliding-images img {
-    margin-right: 80px; /* Space between images */
-    /* Adjust width as needed */
+    margin-right: 80px; 
     margin-bottom: 80px;
     height: auto;
     width: auto;
@@ -284,10 +282,10 @@ body {
 
 @keyframes slide {
     0% {
-        transform: translateX(100%); /* Start outside the right */
+        transform: translateX(100%);
     }
     100% {
-        transform: translateX(-100%); /* End outside the left */
+        transform: translateX(-100%);
     }
 }
 
@@ -312,10 +310,10 @@ body {
 .container-looks img{
     position: relative;
     margin-top: 1500px;
-    width: 250px; /* Explicitly set the image width */
-    height: 350px; /* Explicitly set the image height */
-    object-fit: cover; /* Ensures images fit within the given dimensions without distortion */
-    display: block; /* Ensure images are block-level elements */
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
 }
 
 .container-looks .looks-images{
@@ -395,4 +393,101 @@ body {
     text-transform: uppercase;
     text-align: center;
     padding: 20px 200px 20px 200px;
+}
+
+.section3-video{
+    width: 100%;
+    height: 80%;
+}
+
+.Atmosphere{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: 150px;
+    font-size: 30px;
+}
+
+
+.grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .item2 {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+  }
+  
+  .item5 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+
+  .item7 {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.playlist{
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #ccc;
+    margin-top: 60px;
+}
+
+.playlist img{
+     width: auto;
+     height: 100%;
+}
+
+.playlist .playlist_sp img{
+    height: 70%;
+    width: auto;
+    padding: 20px 20px 20px 20px;
+}
+
+#spotify {
+    position: fixed;
+    margin-left: 920px;
+    margin-top: -700px;
+    max-width: 300px;
+    max-height: 500px;
+}
+
+.last_banner{
+    background-color: #ccc;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
 }
