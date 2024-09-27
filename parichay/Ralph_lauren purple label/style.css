@@ -547,7 +547,555 @@ body{
         margin: 15px 10px; /* Adjust margin for smaller screens */
     }
 }
+nav {
+    position: sticky;
+    width: 100%;
+    height: 8vh;
+    background-color: #041F3A;
+    padding: 0 3.5em;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
 
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    letter-spacing: 8px;
+}
+
+.nav-links {
+    margin-left: 2.8em;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links>.nav-dropdown>a {
+    font-size: 11.5px;
+    letter-spacing: 1px;
+}
+
+.nav-dropdown {
+    /* position: relative; */
+    display: inline-block;
+}
+
+.drop-btn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-content {
+    position: absolute;
+    width: 100vw;
+    height: 40em;
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /* display: flex; */
+    top: 8vh;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-dropdown:hover .drop-btn {
+    /* background-color: #3e8e41; */
+}
+
+.dropdown .dropdown-left {
+    width: calc(100% / 4);
+    height: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown .dropdown-left .drop-link  {
+    height: 80%;
+    width: 80%;
+    /* background-color: #dadada; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    /* align-items: start; */
+}
+
+.sub-drop{
+    position: relative;
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+    align-items: start;
+}
+
+.dropdown .dropdown-left .drop-link > .sub-drop >.click > h4  {
+    font-family: "Playfair Display", serif;
+    /* background-color: #3e8e41; */
+    font-size: 1em;
+    /* display: inline-block; */
+    width: 20vw ;
+    font-weight: 500;
+    padding: 0;
+    color: #505050;   
+}
+
+#h1 > h4 {
+    position: relative;
+    color: black;
+}
+
+#h1 > h4::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: 0%;
+    background-color: black;
+    width: 20% ;
+    height: 1px;
+}
+
+.click{
+    position: relative;
+    cursor: pointer;
+}
+
+.side {
+    position: absolute;
+    width:90vw;
+    min-height: 50vh;  
+}
+
+.inner-box{
+    position: absolute;
+    /* background-color: #3e8e41; */
+    /* opacity: 0 */
+    /* display: none; */
+    /* z-index: 999; */
+    top: 50%;
+    right: 0%;
+    /* left: 50%;  */
+    transform: translate(0% , -50% );
+}
+
+#h1n{
+    /* display: block; */
+    width: 70%;
+    height: 100%;
+    
+}
+
+#h1n::after{
+    content: "";
+    height: 70vh;
+    width: 100%;
+    transform: translate(0, -10%) scaleX(1.2);
+    position: absolute;
+    top: 0;
+    background-image: url("https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f5/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwdaad3103/img/202408/08202024-eu-ts-pop-cat/0820_search_categories_rl_mag.jpg?yocs=4G_4V_4N_4W_");
+    z-index: -1;
+    background-position: center;
+    filter: blur(10px);
+    opacity: 0.4;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#h1n>h5 , #h2n>h5 , .texto{
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.hr-line {
+    border: 0.4px solid black;
+}
+
+#h1n-inside ,
+#h2n-inside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2%;
+    /* background-color: rebeccapurple; */
+}
+
+.h1n-images{
+    width: calc(100% / 4);
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: rebeccapurple; */
+}
+
+#h1n1{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwefd9fe4f/img/202408/08202024-eu-m-brand-flyout/0820_m_brand_flyout_c01a_img.jpg");
+}
+
+#h1n2{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw307b9bb7/img/202408/08202024-eu-m-brand-flyout/0820_m_brand_flyout_c01b_img.jpg");
+}
+
+#h1n3{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw3925f2c2/img/202407/07252024-eu-men-explore-flyout/0723_m_brand_flyout_c01c_img.jpg");
+}
+
+#h1n4{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw4da8d997/img/202408/08202024-eu-m-brand-flyout/0820_m_brand_flyout_c01d_img.jpg");
+}
+
+#h1n5{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw486ad0c2/img/202409/09192024-eu-w-brand-flyout/0917_w_polo_brand_flyout_c01a_img.jpg");
+}
+
+#h1n6{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw1f16b0ef/img/202409/09192024-eu-w-brand-flyout/0917_w_polo_brand_flyout_c01b_img.jpg");
+}
+
+#h1n7{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwf8d540a8/img/202409/09192024-eu-w-brand-flyout/0917_w_polo_brand_flyout_c01c_img.jpg");
+}
+
+#h1n8{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwb755826a/img/202409/09192024-eu-w-brand-flyout/0917_w_polo_brand_flyout_c01d_img.jpg");
+}
+
+#h1n9{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw63097264/img/202409/09192024-eu-kids-flyout/0917_kids_flyout_c01a_img.jpg");
+}
+
+#h1n10{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw8e71e20b/img/202409/09192024-eu-kids-flyout/0917_kids_flyout_c01b_img.jpg");
+}
+
+#h1n11{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw7cd8da2b/img/202409/09122024-eu-kids-flyout/0910_kids_flyout_c01c_img.jpg");
+}
+
+#h1n12{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09042024-eu-home-flyout/0904_home_flyout_c01a_img.jpg");
+}
+
+#h1n13{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09042024-eu-home-flyout/0904_home_flyout_c01b_img.jpg");
+}
+
+#h1n14{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09042024-eu-home-flyout/0904_home_flyout_c01c_img.jpg");
+}
+
+#h1n15{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09062024-eu-discover-flyout/0906_runway_flyout.jpg");
+}
+
+#h1n16{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202408/08202024-eu-discover-flyout/0820_timeless_style_discover_flyout_c01a_img.jpg");
+}
+
+#h1n17{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202408/08152024-eu-worl-flyout/0815_discover_flyout_c01a_img.jpg");
+}
+
+#s12 {
+    top: -5.31vh;
+    z-index: -99;
+}
+
+#h2n{
+    width: 70%;
+    height: 100%;
+}
+
+.text-cont {
+    width: calc(100% / 4);
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start ;
+    gap: 2%;
+    padding-top: 4%;
+}
+
+.text-cont > .texto {
+    padding: 0;
+   font-size: 0.8em;
+}
+
+.text-cont > .texto:hover  {
+    background-color: #ffffff00;
+    border-bottom: 1px solid black ;
+}
+
+#h2n-inside-img {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    /* background-color: rebeccapurple; */
+}
+
+.h1n-images{
+    width: calc(100% / 3);
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: rebeccapurple; */
+}
+
+.right-link{
+    height: 100%;
+    width: 45%;
+    /* background-color: teal; */
+    display: flex;
+    justify-content: end;
+}
+
+.right-nav{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 15%;
+    align-items: center;
+    color: #fff;
+}
+
+.right-nav > i {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: #fff; */
+}
+
+.form-user {
+    position: absolute;
+    width: 25vmax ;
+    height: 30vmax;
+    display: none;
+    background-color: #eaeaea;
+    left: -50%;
+    top: 99%;
+    overflow: hidden;
+   
+}
+
+#user-form:hover .form-user  {
+    display: block;
+    animation: lo 0.5s ease-in-out;
+}
+
+
+@keyframes lo {
+    from{
+        height: 0;
+    } to {
+        height: 30vmax;
+    }
+    
+}
+
+.main-form {
+    width: 100%;
+    height: 100%;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);    
+}
+
+ 
+#upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: #000;
+    padding: 2% 5% ;
+}
+
+.main-form > form {
+    width: 100%;
+    padding: 2% 5% ;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.img_link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img_link1 {
+    width: calc(100% / 3);
+    height: 10vmax ;
+    padding: 10%;
+    text-align: center;
+    /* background-color: #fff; */
+} 
+
+#img_link1 > img {
+    width: 100%;
+    height: 80%;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    }
+    
+    footer>hr{
+    
+    }
+    
+    .footer-content{
+        padding: 30px 30px;
+        display: flex;
+    }
+    
+    .f1{
+        display: flex;
+        flex-direction: column;
+        padding: 0 12% 0 0;
+    }
+    
+    .f1:nth-child(2){
+        padding: 0 12% 0 30px;
+    }
+    
+    .f1:nth-child(3){
+        padding: 0 12% 0 30px;
+    }
+    
+    .list{
+        border-right: 1px solid #bbbbbb;
+    }
+    
+    .list>a{
+        font-size: 0.9em;
+        text-decoration: none;
+        color: black;
+        margin-bottom: 3px;
+    }
+    
+    .list{
+    
+    }
+    
+    .heading_footer h6{
+        margin-bottom: 13px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        color: #041F3A;
+        font-weight: 700;
+    }
+    
+    .f1:nth-child(4){
+        width: 25%;
+        padding-left: 30px;
+        padding-right: 0;
+    }
+    
+    .input-footer{
+        display: flex;
+    }
+    
+    #input-footer {
+        /* background-color: red; */
+        width: 15vw;
+        border-radius: 0;
+        border: 1px solid #041F3A;
+        padding: 8px;
+    }
+    
+    #input-footer::placeholder{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    .input-footer> input[type=submit]{
+        border: none;
+        padding: 8px;
+        background-color: #041F3A;
+        color: white;
+    }
+    
+    .f1>p{
+        font-size: 0.8em;
+        margin-top: 4em;
+    }
+    
+    .f1>p>a{
+        text-decoration: none;
+        color: #041F3A;
+        text-decoration: underline;
+    }
+    
+    .social-icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .social-icons>i{
+        padding: 10px;
+        background-color: #b1b1b1;
+    }
+    
+    .social-icons>i:hover{
+        cursor: pointer;
+    }
+    
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .copyright > p{
+        font-size: 12px;
+    }
 
 
 
