@@ -56,6 +56,38 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 
 ***
 ***
+### Homepage
+![alt text](mohit/assets/screenshots/1.png)
+
+#### Navigation bar
+![alt text](mohit/assets/screenshots/1-1.png)
+
+#### Navigation On Hover User Form
+![alt text](mohit/assets/screenshots/1-2.png) 
+
+### Landing page carousel
+![alt text](mohit/assets/screenshots/2.png)
+
+### slick card carousel
+![alt text](mohit/assets/screenshots/3.png)
+
+### Video background page with overlay content
+![alt text](mohit/assets/screenshots/4.png)
+
+### Picture in background page with overlay content
+![alt text](mohit/assets/screenshots/5.png)
+
+### Video background page 2 with overlay content
+![alt text](mohit/assets/screenshots/6.png)
+
+### Contents with card page
+![alt text](mohit/assets/screenshots/7.png)
+
+### Footer
+![alt text](mohit/assets/screenshots/8.png)
+
+***
+***
 
 ## parichay dutta biswas
 ***
@@ -137,3 +169,22 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 
 
 <!-- /Parichay -->
+
+## abhishek
+***
+### modern
+1. ![alt text](./abhi/assets2/Screenshot%201%20modern.png)
+
+2. ![alt text](./abhi/assets2/Screenshot%202%20modern.png)
+
+3. ![alt text](./abhi/assets2/Screenshot%203%20modern.png)
+
+***
+### seasonal
+1. ![alt text](./abhi/assets2/Screenshot%201%20seasonal.png)
+
+2. ![alt text](./abhi/assets2/Screenshot%202%20seasonal.png)
+
+3. ![alt text](./abhi/assets2/Screenshot%203%20seasonal.png)
+
+***
