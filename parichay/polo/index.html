@@ -3,17 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Polo Ralph Lauren</title>
+  <link rel="icon" href="./assets/icon.jpg">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+  
   <style>
     body, html {
       margin: 0;
       padding: 0;
       height: 100%;
+    }
+
+    .touch {
+      width: 100%;
+      margin: 0 auto; /* Center the container horizontally */
+    }
+    .splide__slide ul{
+      display: flex;
+      gap: 2px;
+    }
+    .splide__slide img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin-right: 10px;
+    }
+
+    .text-overlay {
+      position: absolute;
+      bottom: 40px;
+      left: 70px;
+      color: white;
+      /* background-color: rgba(0, 0, 0, 0.5); */
+      padding: 5px 10px;
+      font-size: xx-large;
+      /* border-radius: 5px; */
+    }
+
+    .splide__arrow {
+      background-color: #c5c5c5;
+      border-radius: 50%;
+      padding: 10px;
+      color: white;
+      border: none;
+      font-size: x-large;
+    }
+    .splide__arrow {
+      background-color: #c5c5c5;
+      border-radius: 50%;
+      padding: 10px;
+      color: white;
+      border: none;
+      font-size: x-large;
     }
   </style>
 
@@ -90,38 +135,54 @@
     </div>
     
     <div class="container">
-      <div class="shop-section">
-          <div class="shop-item">
-              <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw736d6f9b/img/202409/09122024-eu-m-hub/0910_m_polo_hub_c02b_img.jpg" alt="The Sweater Shop">
-              <div class="overlay">
-                  <h2>The Sweater Shop</h2>
-              </div>
+      <div class="touch">
+        <div id="splide" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw736d6f9b/img/202409/09122024-eu-m-hub/0910_m_polo_hub_c02b_img.jpg" alt="Photo 1">
+                <div class="text-overlay">The Sweater Shop</div>
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw2ccab689/img/202409/09192024-eu-mpolo-blp/0917_m_polo_hub_c02b_img.jpg" alt="Photo 2">
+                <div class="text-overlay">Outerwear Shop</div>
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwe662646a/img/202409/09122024-eu-m-hub/0910_m_polo_hub_c02a_img.jpg" alt="Photo 3">
+                <div class="text-overlay">The Shirt Shop</div>
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwb156e79d/img/202409/09062024-eu-m-polo-mb/0906_m_polo_hub_c03b_img.jpg" alt="Photo 4">
+                <div class="text-overlay">Expedition Shop</div>
+              </li>
+              <li class="splide__slide">
+                <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw30a73dae/img/202405/05232024-eu-m-polo-hub/0521_m_polo_coastal_summer_hub_c02b_img.jpg" alt="Photo 5">
+                <div class="text-overlay">Polo Bear Shop</div>
+              </li>
+              <li class="splide__slide">
+                <!-- <img src="./assets/Screenshot 2024-09-27 160236.png" alt="Photo 5"> -->
+                <!-- <div class="text-overlay">Polo Bear Shop</div> -->
+              </li>
+            </ul>
           </div>
-          <div class="shop-item">
-              <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw2ccab689/img/202409/09192024-eu-mpolo-blp/0917_m_polo_hub_c02b_img.jpg" alt="Outerwear Shop">
-              <div class="overlay">
-                  <h2>Outerwear Shop</h2>
-              </div>
-          </div>
-          <div class="shop-item">
-              <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwe662646a/img/202409/09122024-eu-m-hub/0910_m_polo_hub_c02a_img.jpg" alt="Outerwear Shop">
-              <div class="overlay">
-                  <h2>The Shirt Shop</h2>
-              </div>
-          </div>
-          <div class="shop-item">
-              <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwb156e79d/img/202409/09062024-eu-m-polo-mb/0906_m_polo_hub_c03b_img.jpg" alt="Outerwear Shop">
-              <div class="overlay">
-                  <h2>Expedition Shop</h2>
-              </div>
-          </div>
-          <div class="shop-item">
-              <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw30a73dae/img/202405/05232024-eu-m-polo-hub/0521_m_polo_coastal_summer_hub_c02b_img.jpg" alt="Outerwear Shop">
-              <div class="overlay">
-                  <h2>Polo Bear Shop</h2>
-              </div>
-          </div>
-      </div>
+    
+          <!-- Custom navigation buttons -->
+          <!-- <button class="splide__arrow splide__arrow--prev">Previous</button>
+          <button class="splide__arrow splide__arrow--next">Next</button> -->
+        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#splide', {
+              type       : 'slide',
+              perPage    : 3,
+              perMove    : 1,
+              arrows     : true,
+              autoplay   : true,
+            }).mount();
+          });
+        </script>
     </div>
   </section>
 

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Purple Label</title>
+    <link rel="icon" href="./assets/icon.jpg">
     <link rel="stylesheet" href="./style.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
@@ -80,6 +81,45 @@
         text-underline-offset: 12px;
     }
 
+
+    .touch {
+      width: 100%;
+      margin: 0 auto; /* Center the container horizontally */
+    }
+    .splide__slide ul{
+      display: flex;
+      gap: 2px;
+    }
+    .splide__slide img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin-right: 10px;
+    }
+
+    .text-overlay {
+      position: absolute;
+      bottom: 5%;
+      left: 120px;
+      color: white;
+      padding: 5px 10px;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+    }
+
+    .splide__arrow {
+      background-color: #c5c5c5;
+      border-radius: 50%;
+      padding: 10px;
+      color: white;
+      border: none;
+      font-size: x-large;
+    }
+    
+
   </style>
 
 
@@ -151,48 +191,56 @@
   </script>
 
     <!-- ................. -->
-     <section class="purpleLbel">
-        <div class="contents">
-            <h3>THE WORLD OF PURPLE LABEL</h3>
-            <P>Destinations for timeless classics and seasonal collections</P>
-            <a href="#">SHOP ALL</a>
-        </div>
+    <section class="purpleLbel">
+      <div class="contents">
+          <h3>THE WORLD OF PURPLE LABEL</h3>
+          <P>Destinations for timeless classics and seasonal collections</P>
+          <a href="#">SHOP ALL</a>
+      </div>
 
-        <div class="container">
-            <div class="shop-section">
-                <div class="shop-item">
-                    <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202409/09192024-eu-pl-hub-fall/0917_pl_hub_c02a_img.jpg" alt="The Sweater Shop">
-                    <div class="overlay">
-                        <h2>SHOP ALL</h2>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202408/08292024-eu-m-pl-hub/0828_pl_hub_m_c02b_img.jpg" alt="Outerwear Shop">
-                    <div class="overlay">
-                        <h2>ICONS</h2>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202408/08292024-eu-m-pl-hub/0828_pl_hub_c02c_img.jpg">
-                    <div class="overlay">
-                        <h2>ACCESSORIES</h2>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202404/04112024-eu-m-pl-hub/0411_pl_hub_c02c_img.jpg" alt="Outerwear Shop">
-                    <div class="overlay">
-                        <h2>FORMALWEAR</h2>
-                    </div>
-                </div>
-                <div class="shop-item">
-                    <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202404/04112024-eu-m-pl-hub/0411_pl_hub_c02d_img.jpg" alt="Outerwear Shop">
-                    <div class="overlay">
-                        <h2>RESORT</h2>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="touch">
+          <div id="splide" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09192024-eu-pl-hub-fall/0917_pl_hub_c02a_img.jpg" alt="Photo 1">
+                  <div class="text-overlay">shop all</div>
+                </li>
+                <li class="splide__slide">
+                  <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202408/08292024-eu-m-pl-hub/0828_pl_hub_m_c02b_img.jpg" alt="Photo 2">
+                  <div class="text-overlay">icons</div>
+                </li>
+                <li class="splide__slide">
+                  <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202408/08292024-eu-m-pl-hub/0828_pl_hub_c02c_img.jpg" alt="Photo 3">
+                  <div class="text-overlay">accessories</div>
+                </li>
+                <li class="splide__slide">
+                  <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202404/04112024-eu-m-pl-hub/0411_pl_hub_c02c_img.jpg" alt="Photo 4">
+                  <div class="text-overlay">formalwear</div>
+                </li>
+                <li class="splide__slide">
+                  <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202404/04112024-eu-m-pl-hub/0411_pl_hub_c02d_img.jpg" alt="Photo 5">
+                  <div class="text-overlay">resort</div>
+                </li>
+              </ul>
             </div>
-        </div>
-     </section>
+          </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              new Splide('#splide', {
+                type       : 'slide',
+                perPage    : 3,
+                perMove    : 1,
+                arrows     : true,
+                autoplay   : true,
+              }).mount();
+            });
+          </script>
+      </div>
+    </section>  
 
 
      <section class="shopByCategory">
