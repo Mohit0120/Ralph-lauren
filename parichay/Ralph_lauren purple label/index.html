@@ -6,12 +6,150 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .splide__slide {
+      position: relative;
+    }
+
+    /* Fullscreen video */
+    video {
+      width: 100vw;
+      height: 100%;
+      object-fit: cover;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Text overlay styling */
+    .overlay-1 {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 600px;
+      gap: 20px;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      gap: 20px;
+      font-size: 2rem;
+      z-index: 10;
+    }
+
+    /* Navigation buttons styling */
+    .splide__arrow {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 20;
+    }
+    .overlay-1 p{
+        font-family: BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: x-large;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 10px;
+        width: 600px;
+
+
+    }
+    
+    .overlay-1 a{
+        font-family: BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: x-small;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: rgb(255, 255, 255);
+        text-underline-offset: 12px;
+    }
+
+  </style>
+
+
 </head>
 <body>
-    <!-- curousal -->
-    <section class="start">
 
-    </section>
+
+    <!-- curousal -->
+    
+<!-- Splide Slider Container -->
+  <div id="video-slider" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+
+        <!-- Slide 1 -->
+        <li class="splide__slide">
+          <video autoplay muted loop>
+            <source src="//video.ralphlauren.com/202409/20240917-men-pl-hub-lp/HUB-PL-Fall_NavyEquestrian_15s_Anthem_Hero_1440x720_DSK.mp4" type="video/mp4">
+            
+          </video>
+          <div class="overlay-1">
+            <img src="https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f4/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727334605943/img/Brand_Logo_Library/POLO/2021_ralph_lauren_logo_white.svg?yocs=4G_4J_4V_4W_" alt="" width="1000px">
+            <p>Fall 2024</p>
+            <a href="#">SHOP NOW</a>
+          </div>
+        </li>
+
+        <!-- Slide 2 -->
+        <li class="splide__slide">
+          <video autoplay muted loop>
+            <source src="//video.ralphlauren.com/202408/20240828-purple-label-hub/PL-Fall_Palm Beach_15s_16x9_Hero_1440x720_1.mp4" type="video/mp4">
+           
+          </video>
+          <div class="overlay-1">
+            <img src="https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f4/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727334605943/img/Brand_Logo_Library/POLO/2021_ralph_lauren_logo_white.svg?yocs=4G_4J_4V_4W_" alt="" width="1000px">
+            <p>pre-fall 2024: chapter</p>
+            <a href="#">SHOP NOW</a>
+          </div>
+        </li>
+
+        <!-- Slide 3 -->
+        <li class="splide__slide">
+          <img src="https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f4/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727334605943/img/202408/08292024-eu-m-pl-hub/0828_pl_hub_c01b_img.jpg?yocs=4G_4J_4V_4W_" alt="">
+          <div class="overlay-1">
+            <img src="https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f4/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727334605943/img/Brand_Logo_Library/POLO/2021_ralph_lauren_logo_white.svg?yocs=4G_4J_4V_4W_" alt="" width="1000px">
+            <p>accessories</p>
+            <a href="#">SHOP NOW</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <!-- <button class="splide__arrow splide__arrow--prev">Previous</button>
+    <button class="splide__arrow splide__arrow--next">Next</button> -->
+  </div>
+
+  <!-- Initialize Splide Slider -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#video-slider', {
+        type: 'loop',
+        perPage: 1,
+        autoplay: true,
+        interval: 20000,
+      }).mount();
+    });
+  </script>
+
     <!-- ................. -->
      <section class="purpleLbel">
         <div class="contents">

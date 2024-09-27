@@ -7,11 +7,6 @@ body{
     width: auto;
 
 }
-.start{
-    width: 100vw;
-    height: 100vh;
-    background-color: aqua;
-}
 .purpleLbel{
     background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727248278329/img/202409/09192024-eu-pl-hub-fall/0917_pl_hub_c02_bg.jpg");
     background-repeat: no-repeat;
