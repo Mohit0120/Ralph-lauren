@@ -1,4 +1,13 @@
 # Ralph Lauren
+***
+### contributors
+   - Mohit Sharma
+   - Parichay dutta biswas
+   - abhishek ganvir
+   - shreshtha tiwari
+***
+***
+
 1.Landing Page Made by Mohit Sharma(Captain)
 ***
 
@@ -47,9 +56,12 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 
 ***
 ***
-<!-- Parichay -->
 
-<!-- POLO -->
+## parichay dutta biswas
+***
+
+## polo page
+
 ### Section1
 ![alt text](./parichay/assets/image.png)
 
@@ -83,37 +95,38 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 ![alt text](mohit/assets/screenshots/8.png)
 
 
-<!-- Purple section -->
-###Section1
+## Purple section 
+
+### Section1
 ![alt text](./parichay/assets/image%20copy%2010.png)
 
-####Section2
+#### Section2
 ![alt text](./parichay/assets/image%20copy%2011.png)
 
-####Section3
+#### Section3
 ![alt text](./parichay/assets/image%20copy%2013.png) 
 
-###Section4
+### Section4
 ![alt text](./parichay/assets/image%20copy%2012.png)
 
-###Section5
+### Section5
 ![alt text](./parichay/assets/image%20copy%2014.png)
 
-###Section6
+### Section6
 ![alt text](./parichay/assets/image%20copy%2015.png)
 
-###Section7
+### Section7
 ![alt text](./parichay/assets/image%20copy%2016.png)
 
-###Section8
+### Section8
 ![alt text](./parichay/assets/image%20copy%2017.png)
 
-###Section9
+### Section9
 ![alt text](./parichay/assets/image%20copy%2018.png)
 
-###Section10
+### Section10
 ![alt text](./parichay/assets/image%20copy%2019.png)
-###Footer
+### Footer
 ![alt text](mohit/assets/screenshots/8.png)
 
 
