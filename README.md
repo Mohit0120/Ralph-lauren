@@ -61,6 +61,7 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 ***
 
 ## polo page
+***
 
 ### Section1
 ![alt text](./parichay/assets/image.png)
@@ -91,11 +92,14 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 
 ### Section10
 ![alt text](./parichay/assets/image%20copy%209.png)
+
 ### Footer
 ![alt text](mohit/assets/screenshots/8.png)
+***
 
 
 ## Purple section 
+***
 
 ### Section1
 ![alt text](./parichay/assets/image%20copy%2010.png)
@@ -128,6 +132,8 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 ![alt text](./parichay/assets/image%20copy%2019.png)
 ### Footer
 ![alt text](mohit/assets/screenshots/8.png)
+
+***
 
 
 <!-- /Parichay -->
