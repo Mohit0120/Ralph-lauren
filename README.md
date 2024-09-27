@@ -65,10 +65,10 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 ### Section1
 ![alt text](./parichay/assets/image.png)
 
-#### Section2
+### Section2
 ![alt text](./parichay/assets/image%20copy.png)
 
-#### Section3
+### Section3
 ![alt text](./parichay/assets/image%20copy%202.png) 
 
 ### Section4
@@ -100,10 +100,10 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 ### Section1
 ![alt text](./parichay/assets/image%20copy%2010.png)
 
-#### Section2
+### Section2
 ![alt text](./parichay/assets/image%20copy%2011.png)
 
-#### Section3
+### Section3
 ![alt text](./parichay/assets/image%20copy%2013.png) 
 
 ### Section4
