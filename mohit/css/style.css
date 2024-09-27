@@ -84,7 +84,6 @@ body {
 }
 
 nav {
-    position: sticky;
     width: 100%;
     height: 8vh;
     background-color: #041F3A;
@@ -193,19 +192,34 @@ nav a h1 {
     /* display: inline-block; */
     display: flex;
     flex-direction: column;
-    gap: 2.65em;
+    gap: 1.8em;
     align-items: start;
 }
 
-.dropdown .dropdown-left .drop-link > .sub-drop >.click > h4 {
+.dropdown .dropdown-left .drop-link > .sub-drop >.click > h4  {
     font-family: "Playfair Display", serif;
     /* background-color: #3e8e41; */
-    font-size: 1.1em;
+    font-size: 1em;
     /* display: inline-block; */
     width: 20vw ;
     font-weight: 500;
     padding: 0;
-    color: #505050;
+    color: #505050;   
+}
+
+#h1 > h4 {
+    position: relative;
+    color: black;
+}
+
+#h1 > h4::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: 0%;
+    background-color: black;
+    width: 20% ;
+    height: 1px;
 }
 
 .click{
@@ -213,25 +227,10 @@ nav a h1 {
     cursor: pointer;
 }
 
-
 .side {
     position: absolute;
     width:90vw;
-    min-height: 50vh;
-    /* background-color: #3e8e41; */
-    /* opacity: 0 */
-    display: none;
-    z-index: 999;
-    top: 0;
-    left: 0%;
-    /* background-color: red; */
-    /* transform: translateX(100%); */
-   
-}
-
-
-.click:hover  .side{
-    display: block;
+    min-height: 50vh;  
 }
 
 .inner-box{
@@ -244,14 +243,6 @@ nav a h1 {
     right: 0%;
     /* left: 50%;  */
     transform: translate(0% , -50% );
-}
-/* 
-.click:hover  .inner-box{
-    display: block;
-} */
-
-#h1{
-    
 }
 
 #h1n{
@@ -277,30 +268,34 @@ nav a h1 {
     background-repeat: no-repeat;
 }
 
-#h1n>h5{
+#h1n>h5 , #h2n>h5 , .texto{
     letter-spacing: 2px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-#h1n>hr{
+.hr-line {
     border: 0.4px solid black;
 }
 
-#h1n-inside{
+#h1n-inside ,
+#h2n-inside {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2%;
+    /* background-color: rebeccapurple; */
 }
 
 .h1n-images{
-    width: 23%;
+    width: calc(100% / 4);
     height: 100%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    /* background-color: rebeccapurple; */
 }
 
 #h1n1{
@@ -319,50 +314,1113 @@ nav a h1 {
     background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw4da8d997/img/202408/08202024-eu-m-brand-flyout/0820_m_brand_flyout_c01d_img.jpg");
 }
 
-#h2{
-    /* background-color: rgb(0, 66, 128); */
+#h1n5{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw486ad0c2/img/202409/09192024-eu-w-brand-flyout/0917_w_polo_brand_flyout_c01a_img.jpg");
+}
+
+#h1n6{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw1f16b0ef/img/202409/09192024-eu-w-brand-flyout/0917_w_polo_brand_flyout_c01b_img.jpg");
+}
+
+#h1n7{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwf8d540a8/img/202409/09192024-eu-w-brand-flyout/0917_w_polo_brand_flyout_c01c_img.jpg");
+}
+
+#h1n8{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dwb755826a/img/202409/09192024-eu-w-brand-flyout/0917_w_polo_brand_flyout_c01d_img.jpg");
+}
+
+#h1n9{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw63097264/img/202409/09192024-eu-kids-flyout/0917_kids_flyout_c01a_img.jpg");
+}
+
+#h1n10{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw8e71e20b/img/202409/09192024-eu-kids-flyout/0917_kids_flyout_c01b_img.jpg");
+}
+
+#h1n11{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw7cd8da2b/img/202409/09122024-eu-kids-flyout/0910_kids_flyout_c01c_img.jpg");
+}
+
+#h1n12{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09042024-eu-home-flyout/0904_home_flyout_c01a_img.jpg");
+}
+
+#h1n13{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09042024-eu-home-flyout/0904_home_flyout_c01b_img.jpg");
+}
+
+#h1n14{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09042024-eu-home-flyout/0904_home_flyout_c01c_img.jpg");
+}
+
+#h1n15{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09062024-eu-discover-flyout/0906_runway_flyout.jpg");
+}
+
+#h1n16{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202408/08202024-eu-discover-flyout/0820_timeless_style_discover_flyout_c01a_img.jpg");
+}
+
+#h1n17{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202408/08152024-eu-worl-flyout/0815_discover_flyout_c01a_img.jpg");
+}
+
+#s12 {
+    top: -5.31vh;
+    z-index: -99;
 }
 
 #h2n{
-    background-color: #8a7878;
+    width: 70%;
+    height: 100%;
 }
 
-#h3{
-    /* background-color: rgb(0, 128, 75); */
+.text-cont {
+    width: calc(100% / 4);
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start ;
+    gap: 2%;
+    padding-top: 4%;
 }
 
-#h3n{
-    background-color: #d08282;
+.text-cont > .texto {
+    padding: 0;
+   font-size: 0.8em;
 }
 
-#h4{
-    /* background-color: rgb(77, 128, 0); */
+.text-cont > .texto:hover  {
+    background-color: #ffffff00;
+    border-bottom: 1px solid black ;
 }
 
-#h4n{
-    background-color: #d3833d;
+#h2n-inside-img {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    /* background-color: rebeccapurple; */
 }
 
-#h5{
-    /* background-color: rgb(68, 0, 128); */
+.h1n-images{
+    width: calc(100% / 3);
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: rebeccapurple; */
 }
 
-#h5n{
-    background-color: #6963c8;
+.right-link{
+    height: 100%;
+    width: 45%;
+    /* background-color: teal; */
+    display: flex;
+    justify-content: end;
 }
 
-#h6{
-    /* background-color: rgb(65, 142, 177); */
+.right-nav{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 15%;
+    align-items: center;
+    color: #fff;
 }
 
-#h6n{
-    background-color: #a8b977;
+.right-nav > i {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: #fff; */
 }
 
-#h7{
-    /* background-color: rgb(128, 0, 55); */
+.form-user {
+    position: absolute;
+    width: 25vmax ;
+    height: 30vmax;
+    display: none;
+    background-color: #eaeaea;
+    left: -50%;
+    top: 99%;
+    overflow: hidden;
+   
 }
 
-#h7n{
-    background-color: #9f6061;
+#user-form:hover .form-user  {
+    display: block;
+    animation: lo 0.5s ease-in-out;
+}
+
+
+@keyframes lo {
+    from{
+        height: 0;
+    } to {
+        height: 30vmax;
+    }
+    
+}
+
+.main-form {
+    width: 100%;
+    height: 100%;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);    
+}
+
+ 
+#upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: #000;
+    padding: 2% 5% ;
+}
+
+.main-form > form {
+    width: 100%;
+    padding: 2% 5% ;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.img_link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img_link1 {
+    width: calc(100% / 3);
+    height: 10vmax ;
+    padding: 10%;
+    text-align: center;
+    /* background-color: #fff; */
+} 
+
+#img_link1 > img {
+    width: 100%;
+    height: 80%;
+}
+
+/* page 1 starts here */
+
+.carousel-img {}
+
+.carousel-caption {
+    font-family: "Playfair Display", serif;
+    color: white;
+    width: 100%;
+}
+
+#c1 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-caption h1 {
+    font-size: 4.5em;
+    letter-spacing: 4px;
+    margin-bottom: -5px;
+}
+
+.carousel-caption h5 {
+    font-weight: 100;
+    letter-spacing: 4px;
+    font-size: 0.9em;
+    margin-bottom: 1.8em;
+}
+
+.carousel-caption h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.4em;
+}
+
+.carousel-caption a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.6em;
+    font-family: RL_DroidKufi, grotesk, Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.carousel-caption a:hover {
+    padding-bottom: 2px;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#c2 {
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+}
+
+.c2-links a {
+    margin-right: 25px;
+}
+
+#c3 {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#c3>a:nth-child(1) {
+    border: 5px solid white;
+    font-family: "Playfair Display", serif;
+    padding: 0 4px;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+#c3>h5 {
+    margin-top: 6px;
+    font-size: 1.5em;
+    letter-spacing: 0;
+    margin-bottom: 1em;
+    word-spacing: 2px;
+}
+
+/* Custom styling for the Previous and Next buttons */
+.custom-prev,
+.custom-next {
+    width: 40px;
+    /* Adjust width */
+    height: 40px;
+    /* Adjust height */
+    background-color: rgba(255, 255, 255, 1);
+    /* Background color for buttons */
+    border-radius: 50%;
+    /* Make the buttons circular */
+    top: 46%;
+    transform: translate(0#E1E1E5, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background-color: rgba(255, 255, 255, 1);
+    /* Change background color on hover */
+}
+
+/* Custom styling for the icons */
+.custom-icon {
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    background-image: url('https://via.placeholder.com/30');
+    /* Placeholder for custom icon */
+    background-size: 14px;
+}
+
+/* Specific custom icons for prev and next */
+.custom-prev .custom-icon {
+    background-image: url('../assets/arrow_back\ copy.svg');
+    /* Custom left arrow icon */
+}
+
+.custom-next .custom-icon {
+    background-image: url('../assets/arrow_forward\ copy\ 2.svg');
+    /* Custom right arrow icon */
+}
+
+/* Optional: adjust the position of the buttons */
+.carousel-control-prev {
+    left: 20px;
+    /* Adjust position of prev button */
+}
+
+.carousel-control-next {
+    right: 20px;
+    /* Adjust position of next button */
+}
+
+/* Progress bar container (grey line) */
+.progress-container {
+    /* margin-left: %; */
+    position: relative;
+    justify-self: center;
+    width: 90%;
+    /* Full width under the text */
+    height: 3.5px;
+    /* Thickness of the grey line */
+    background-color: #b1b1b1;
+    /* Grey background line */
+    /* Space between text and progress bar */
+    overflow: hidden;
+    /* Prevents the progress bar from overflowing the container */
+}
+
+/* White progress bar */
+.progress-bar {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    /* Initial width at 0% */
+    background-color: white;
+    /* White progress bar */
+    animation: progress 4s ease-in-out forwards infinite;
+    /* 2-second animation */
+}
+
+/* Keyframes for the animation */
+@keyframes progress {
+    0% {
+        width: 0%;
+        /* Starts at 0% */
+    }
+
+    100% {
+        width: 100%;
+        /* Ends at 100%, full width */
+    }
+}
+
+.progress-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5em;
+    margin-top: 2em;
+}
+
+.progress-div>p {
+    margin-bottom: 8px;
+    align-self: center;
+}
+
+#c22 {
+    position: absolute;
+    top: 87.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* page 1 ends here */
+
+/* page 2 starts here */
+
+.page-2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f5/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727334605943/img/202409/09262024-eu-hp/0926_hp_c02_bg.jpg?yocs=4G_4V_4N_4W_");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8em;
+    margin-bottom: 50px;
+}
+
+.left-p2 {
+    height: 100%;
+    width: 55%;
+    position: relative;
+    /* background-color: wheat; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center;     */
+    /* align-items: center; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    color: white;
+}
+
+.lp2img {
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727334605943/img/202409/09262024-eu-hp/0926_hp_c02_img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lp2t {
+    /* width: 100%; */
+    /* align-self: end; */
+    transform: translateY(870%);
+
+}
+
+.lp2t>h2 {
+    /* justify-self: start; */
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.lp2t>a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.6em;
+    font-family: RL_DroidKufi, grotesk, Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.lp2t>a:hover {
+    padding-bottom: 2px;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.right-p2 {}
+
+.rp2t {
+    transform: translateY(-690%) translateX(-10%);
+}
+
+.rp2t>h2 {
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+}
+
+.rp2img {}
+
+.rp2timg>hr {
+    border: 0.4px solid white;
+    transform: translateY(200px);
+}
+
+/* card stack */
+
+/* *,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* body {
+  
+} */
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    /* min-height: 100vh; */
+}
+
+/* Content */
+
+
+
+
+
+/* Stacked Cards */
+
+.stack {
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 0;
+    width: 250px;
+    height: 350px;
+    /* border-radius: 2rem; */
+    /* box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25),
+    0 15px 20px 0 rgba(0, 0, 0, 0.125); */
+    transition: transform 0.6s;
+    user-select: none;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* border-radius: inherit; */
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.card:nth-last-child(n + 5) {
+    --x: calc(-50% + 90px);
+    transform: translate(var(--x), -50%) scale(0.85);
+    /* box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.01); */
+}
+
+.card:nth-last-child(4) {
+    --x: calc(-50% + 60px);
+    transform: translate(var(--x), -50%) scale(0.9);
+}
+
+.card:nth-last-child(3) {
+    --x: calc(-50% + 30px);
+    transform: translate(var(--x), -50%) scale(0.95);
+}
+
+.card:nth-last-child(2) {
+    --x: calc(-50%);
+    transform: translate(var(--x), -50%) scale(1);
+}
+
+.card:nth-last-child(1) {
+    --x: calc(-50% - 30px);
+    transform: translate(var(--x), -50%) scale(1.05);
+}
+
+.card:nth-last-child(1) img {
+    /* box-shadow: 0 1px 5px 5px rgba(255, 193, 111, 0.5); */
+}
+
+.swap {
+    animation: swap 1.3s ease-out forwards;
+}
+
+@keyframes swap {
+    30% {
+        transform: translate(calc(var(--x) - 250px), -50%) scale(0.85) rotate(-5deg) rotateY(65deg);
+    }
+
+    100% {
+        transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
+        z-index: -1;
+    }
+}
+
+/* Media queries for keyframes */
+
+@media (max-width: 1200px) {
+    @keyframes swap {
+        30% {
+            transform: translate(calc(var(--x) - 200px), -50%) scale(0.85) rotate(-5deg) rotateY(65deg);
+        }
+
+        100% {
+            transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
+            z-index: -1;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    @keyframes swap {
+        30% {
+            transform: translate(calc(var(--x) - 150px), -50%) scale(0.85) rotate(-5deg) rotateY(65deg);
+        }
+
+        100% {
+            transform: translate(calc(var(--x) - 30px), -50%) scale(0.5);
+            z-index: -1;
+        }
+    }
+}
+
+/* Media queries for other classes */
+
+@media (max-width: 1200px) {
+
+    .card {
+        width: 250px;
+        height: 380px;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .card {
+        width: 220px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 950px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 3fr;
+        grid-template-areas:
+            "stacked"
+            "content";
+    }
+
+    .stack {
+        grid-area: stacked;
+    }
+}
+
+@media (max-width: 650px) {
+    .main {
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    .card {
+        width: 180px;
+        height: 260px;
+    }
+}
+
+/* section 2 ends */
+
+/* section3 starts */
+
+.section_3 {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.video_page_3 {
+    position: relative;
+}
+
+.page_3_content {
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    /* font-family: playfair display, sans-serif; */
+}
+
+.page_3_content>h5 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.page_3_content>h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    letter-spacing: 3px;
+    font-family: playfair display, sans-serif;
+}
+
+.page_3_content>.page_3_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page_3_content>.page_3_btns>a {
+    padding: 2px 30px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.page_3_content>.page_3_btns>a:nth-child(2) {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.page_3_content>.page_3_btns>a>i {
+    font-size: 0.9rem;
+}
+
+.page_3_content>.page_3_btns>a:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    transition: 0.5s ease-in-out;
+    /* border-radius: 50px; */
+}
+
+.page_3_content>i {
+    position: absolute;
+    left: 1%;
+    top: 150%;
+    font-size: 2.5rem;
+}
+
+/* page 3 ends here */
+
+/* page 4 starts here */
+
+.section_4 {
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cdn-fsly.yottaa.net/620ab0e7d93140aaa4e17365/www.ralphlauren.global/v~4b.f5/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09262024-eu-hp/0926_hp_c06_img.jpg?yocs=4G_4V_4N_4W_");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page_4_content {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.page_4_content>h1 {
+    font-family: playfair display, sans-serif;
+    font-size: 2.3em;
+    letter-spacing: 16px;
+    margin-bottom: 10px;
+}
+
+.page_4_content>p {
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.page_4_content>.page_4_btns {}
+
+.page_4_content>.page_4_btns>a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.6em;
+  font-family: RL_DroidKufi, grotesk, Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid white;
+  padding-bottom: 4px;
+  transition:0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.page_4_content>.page_4_btns>a:hover {
+    padding-bottom: 2px;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.page_4_content>.page_4_btns>a:nth-child(1) {
+    margin-right: 20px;
+}
+
+/* page 4 ends */
+
+/* page 5 starts here */
+
+.section_5{
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.page_5_content{
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.page_5_content>h2{
+    font-family: playfair display, sans-serif;
+    letter-spacing: 8px;
+}
+
+.page_5_content>h5{
+    font-size: 16px;
+    letter-spacing: 8px;
+}
+
+.page_5_content>h1 {
+    font-family: playfair display, sans-serif;
+    font-size: 3em;
+    /* letter-spacing: 16px; */
+    margin-bottom: 10px;
+}
+
+.page_5_content>p {
+    font-weight: 400;
+    /* letter-spacing: 2.5px; */
+    font-family: playfair display, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.page_5_content>.page_5_btns {}
+
+.page_5_content>.page_5_btns>a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.6em;
+  font-family: RL_DroidKufi, grotesk, Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid white;
+  padding-bottom: 4px;
+  transition:0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.page_5_content>.page_5_btns>a:hover {
+    padding-bottom: 2px;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.page_5_content>.page_5_btns>a:nth-child(1) {
+    margin-right: 20px;
+}
+
+.page_5_content>i {
+    position: absolute;
+    left: 1%;
+    top: 98%;
+    font-size: 2.5rem;
+}
+
+/* page 5 ends here */
+
+/* page 6 starts here */
+
+.section_6{
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.section_6_left{
+    font-family: playfair display, sans-serif;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 23%;
+    height: 100%;
+    /* background-color: #9f6061; */
+}
+
+.section_6_left>p{
+    /* text-align: center; */
+    font-weight: 500;
+}
+
+.section_6_left>h1{
+    font-size: 3rem;
+}
+
+.section_6_right{
+    width: 77%;
+    height: 100%;
+    padding: 0 10px;
+    /* background-color: #9f6061; */
+}
+
+.s6_img{
+    margin-top: 10%;
+    width: 100%;
+    height: 75%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* transform: translateY(18%); */
+}
+
+.section_6_img{
+    height: 90%;
+    width: 30%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* padding-right: 10px; */
+}
+
+.section_6_img>h3{
+    color: white;
+    font-family: playfair display, sans-serif;
+    margin-bottom: 20px;
+}
+
+#s1{
+    /* margin-left: 5%; */
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09262024-eu-hp/0926_hp_c08a_img.jpg");
+}
+
+#s2{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09192024-eu-hp/0917_hp_c08b_img.jpg");
+}
+
+#s3{
+    background-image: url("https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/en_IN/v1727420805069/img/202409/09122024-eu-hp/0910_hp_c08b_img.jpg");
+}
+
+.section_6_progress{
+    width: 100%;
+    height: 2px;
+    background-color: #bbbbbb;
+}
+
+.section_6_black_progress{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+}
+
+/* page 6 ends here */
+
+/* footer starts here */
+
+footer{
+width: 100%;
+height: 100vh;
+}
+
+footer>hr{
+
+}
+
+.footer-content{
+    padding: 30px 30px;
+    display: flex;
+}
+
+.f1{
+    display: flex;
+    flex-direction: column;
+    padding: 0 12% 0 0;
+}
+
+.f1:nth-child(2){
+    padding: 0 12% 0 30px;
+}
+
+.f1:nth-child(3){
+    padding: 0 12% 0 30px;
+}
+
+.list{
+    border-right: 1px solid #bbbbbb;
+}
+
+.list>a{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3px;
+}
+
+.list{
+
+}
+
+.heading_footer h6{
+    margin-bottom: 13px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #041F3A;
+    font-weight: 700;
+}
+
+.f1:nth-child(4){
+    width: 25%;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.input-footer{
+    display: flex;
+}
+
+#input-footer {
+    /* background-color: red; */
+    width: 15vw;
+    border-radius: 0;
+    border: 1px solid #041F3A;
+    padding: 8px;
+}
+
+#input-footer::placeholder{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.input-footer> input[type=submit]{
+    border: none;
+    padding: 8px;
+    background-color: #041F3A;
+    color: white;
+}
+
+.f1>p{
+    font-size: 0.8em;
+    margin-top: 4em;
+}
+
+.f1>p>a{
+    text-decoration: none;
+    color: #041F3A;
+    text-decoration: underline;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons>i{
+    padding: 10px;
+    background-color: #b1b1b1;
+}
+
+.social-icons>i:hover{
+    cursor: pointer;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright > p{
+    font-size: 12px;
 }
