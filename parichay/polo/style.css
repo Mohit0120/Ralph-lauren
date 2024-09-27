@@ -610,3 +610,340 @@ h2 {
 .end-1 a {
   color: rgb(186, 173, 114);
 }
+
+/* For tablets and devices with a screen width of 768px or smaller */
+@media only screen and (max-width: 768px) {
+  /* Adjust video size */
+  video {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Overlay content adjustments */
+  .overlay-1 {
+    width: 80%; /* Adjust the width */
+    top: 70%; /* Change top position */
+    font-size: 1.5rem; /* Reduce font size */
+  }
+  
+  .overlay-1 p, .overlay-1 h2, .rrr h2 {
+    font-size: 1.2rem; /* Reduce text size */
+    width: 100%; /* Adjust width */
+  }
+  
+  .overlay-1 h2, .rrr h2 {
+    font-size: 2rem; /* Reduce headline size */
+  }
+  
+  /* Adjust button styling */
+  .overlay-1 a, .rrr a {
+    font-size: small;
+  }
+}
+
+/* For mobile phones and devices with a screen width of 480px or smaller */
+@media only screen and (max-width: 480px) {
+  /* Adjust video size */
+  video {
+    width: 100vw;
+    height: auto;
+  }
+
+  /* Overlay content adjustments */
+  .overlay-1 {
+    width: 90%; /* Adjust width */
+    top: 60%; /* Change top position */
+    font-size: 1rem; /* Further reduce font size */
+  }
+  
+  .overlay-1 p, .overlay-1 h2, .rrr h2 {
+    font-size: 1rem; /* Adjust text size */
+    width: 100%; /* Adjust width */
+  }
+  
+  .overlay-1 h2, .rrr h2 {
+    font-size: 1.5rem; /* Further reduce headline size */
+  }
+  
+  /* Adjust button styling */
+  .overlay-1 a, .rrr a {
+    font-size: x-small;
+  }
+  
+  /* Add padding/margin adjustments for smaller screens */
+  .overlay-1, .rrr {
+    padding: 10px;
+  }
+}
+
+/* Media query for tablet screens */
+@media (max-width: 1024px) {
+  .TheShops {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Adjust height for content */
+    padding-top: 40px; /* Reduce padding */
+  }
+
+  .text {
+    padding: 10px; /* Reduce padding for text container */
+  }
+
+  .TheShops .text img {
+    width: 80%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  h2 {
+    font-size: 30px; /* Reduce heading size */
+  }
+
+  .container {
+    width: 100%; /* Full width for the container */
+    height: auto; /* Adjust height for content */
+  }
+
+  .overlay {
+    bottom: 20px; /* Adjust overlay position */
+    left: 20px; /* Adjust overlay position */
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .TheShops {
+    padding-top: 20px; /* Further reduce top padding */
+  }
+
+  .TheShops .text img {
+    width: 90%; /* Make the image more responsive */
+  }
+
+  h2 {
+    font-size: 24px; /* Further reduce heading size */
+  }
+
+  .overlay {
+    bottom: 10px; /* Adjust overlay position */
+    left: 10px; /* Adjust overlay position */
+    font-size: small; /* Reduce font size for overlay */
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .TheShops {
+    padding-top: 10px; /* Minimal top padding */
+  }
+
+  .TheShops .text img {
+    width: 100%; /* Full width for image */
+  }
+
+  h2 {
+    font-size: 20px; /* Smallest heading size */
+  }
+
+  .overlay {
+    bottom: 5px; /* Adjust overlay position */
+    left: 5px; /* Adjust overlay position */
+    font-size: x-small; /* Smaller font size for overlay */
+  }
+}
+
+@media (max-width: 768px) {
+  .outerwearShop {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .outerwearShop .ele > p {
+    width: 90%; /* Make the paragraph take up more width */
+    font-size: medium; /* Adjust font size for readability */
+  }
+
+  .ele #first img {
+    width: 200px; /* Reduce logo size */
+  }
+
+  .ele #second h1 {
+    font-size: 40px; /* Adjust heading size */
+  }
+
+  .ele a {
+    font-size: 16px; /* Adjust link font size */
+  }
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 480px) {
+  .outerwearShop .ele > p {
+    font-size: small; /* Smaller text for mobile */
+    line-height: 24px; /* Adjust line height */
+  }
+
+  .ele #first img {
+    width: 150px; /* Further reduce logo size */
+  }
+
+  .ele #second h1 {
+    font-size: 30px; /* Further reduce heading size */
+  }
+
+  .ele a {
+    font-size: 14px; /* Smaller link font size */
+  }
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .thequiltedgilet {
+    height: 600px; /* Adjust height for smaller screens */
+    padding: 60px 30px; /* Reduce padding */
+  }
+
+  .elements > h3 {
+    font-size: 24px; /* Decrease font size */
+    margin-left: 0; /* Center the heading */
+  }
+
+  .elements > p {
+    font-size: 16px; /* Decrease font size */
+    margin-left: 0; /* Center the paragraph */
+    width: auto; /* Allow full width */
+  }
+
+  .elements > a {
+    font-size: 12px; /* Increase link font size for better readability */
+    margin-left: 0; /* Center the link */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .thequiltedgilet {
+    height: 500px; /* Further reduce height */
+    padding: 40px 20px; /* Further reduce padding */
+  }
+
+  .elements > h3 {
+    font-size: 20px; /* Further decrease font size */
+  }
+
+  .elements > p {
+    font-size: 14px; /* Further decrease font size */
+    line-height: 24px; /* Adjust line height for better readability */
+  }
+
+  .elements > a {
+    font-size: 12px; /* Keep the same size as in tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .jacket {
+    padding: 30px 20px; /* Reduce padding for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .container3 {
+    flex-direction: column; /* Stack the images vertically */
+    gap: 20px; /* Adjust gap between items */
+  }
+
+  .container3 .img1,
+  .container3 .img2,
+  .container3 .img3 {
+    width: 100%; /* Make images full width */
+    height: 900px; /* Set a fixed height for each image */
+  }
+
+  .contents3 {
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .contents3 > h3 {
+    font-size: large; /* Adjust font size */
+  }
+
+  .contents3 > a {
+    font-size: small; /* Adjust link font size */
+  }
+}
+
+/* Media Query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .the_icons {
+    padding: 30px 20px; /* Adjust padding */
+    height: auto; /* Allow height to be dynamic */
+  }
+
+  .image_contener {
+    height: auto; /* Allow height to be dynamic */
+    background-size: cover; /* Maintain the background image */
+  }
+
+  .image_contener .elements {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Reduce gap */
+  }
+
+  .image_contener .elements .nw_ti > p {
+    font-size: 10px; /* Smaller font for paragraph */
+  }
+
+  .image_contener .elements .nw_ti > h3 {
+    font-size: 40px; /* Smaller font for h3 */
+    letter-spacing: 10px; /* Reduced letter spacing */
+  }
+
+  .image_contener .elements .links > a {
+    font-size: small; /* Increase font size for better readability */
+  }
+}
+
+/* Media Query for mobile screens */
+@media (max-width: 480px) {
+  .the_icons {
+    padding: 20px 10px; /* Further reduce padding */
+  }
+
+  .image_contener {
+    height: auto; /* Keep height dynamic */
+  }
+
+  .image_contener .elements {
+    gap: 15px; /* Further reduce gap */
+  }
+
+  .image_contener .elements .nw_ti > p {
+    font-size: 8px; /* Even smaller font for paragraph */
+  }
+
+  .image_contener .elements .nw_ti > h3 {
+    font-size: 30px; /* Smaller font for h3 */
+    letter-spacing: 5px; /* Further reduced letter spacing */
+  }
+
+  .image_contener .elements .links > a {
+    font-size: medium; /* Adjust for better readability */
+  }
+}
+@media (max-width: 480px) {
+  .contents4 {
+    margin-left: 10px; /* Further adjust margins for extra small screens */
+    margin-bottom: 10px; /* Further adjust margins for extra small screens */
+  }
+
+  .contents4 h2 {
+    font-size: medium; /* Adjust font size for extra small screens */
+  }
+
+  .im_container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+

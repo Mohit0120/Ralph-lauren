@@ -81,6 +81,73 @@
         text-underline-offset: 12px;
     }
 
+    /* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .overlay-1 {
+        width: 90%; /* Reduce width for smaller screens */
+        font-size: 1.5rem; /* Decrease font size */
+        gap: 15px; /* Adjust gap */
+    }
+
+    .overlay-1 p {
+        font-size: large; /* Adjust paragraph font size */
+        letter-spacing: 5px; /* Reduce letter spacing */
+    }
+
+    .overlay-1 a {
+        font-size: small; /* Adjust link font size */
+    }
+
+    /* Make the video take up the full width */
+    video {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay-1 {
+        width: 90%; /* Further reduce width */
+        top: 70%; /* Adjust position */
+        gap: 10px; /* Further reduce gap */
+    }
+
+    .overlay-1 p {
+        font-size: medium; /* Further decrease paragraph font size */
+        letter-spacing: 3px; /* Further reduce letter spacing */
+    }
+
+    .overlay-1 a {
+        font-size: x-small; /* Further adjust link font size */
+    }
+
+    /* Ensure video is still responsive */
+    video {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-1 {
+        font-size: 1rem; /* Reduce font size for mobile */
+        gap: 5px; /* Further reduce gap */
+    }
+
+    .overlay-1 p {
+        font-size: small; /* Adjust paragraph font size */
+    }
+
+    .overlay-1 a {
+        font-size: xx-small; /* Adjust link font size */
+    }
+
+    /* Fullscreen video for mobile */
+    video {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
 
     .touch {
       width: 100%;

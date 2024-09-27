@@ -342,3 +342,213 @@ body{
     width: 100%;
     height: 100px;
 }
+
+
+
+/* Base styles for mobile devices */
+@media (max-width: 768px) {
+    .purpleLbel {
+        flex-direction: column; /* Stack contents vertically */
+        padding: 40px 20px; /* Reduce padding */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .contents {
+        width: 100%; /* Use full width */
+        margin-left: 0; /* Remove margin */
+    }
+
+    .contents h3 {
+        font-size: 1.5rem; /* Adjust font size */
+        line-height: 1.5rem; /* Adjust line height */
+    }
+
+    .text-overlay {
+        left: 10px; /* Adjust position for smaller screens */
+        font-size: 14px; /* Smaller text size */
+        padding: 3px 5px; /* Adjust padding */
+    }
+
+    .splide__slide img {
+        margin-right: 0; /* Remove right margin */
+    }
+}
+
+/* Styles for tablets and larger mobile devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .purpleLbel {
+        flex-direction: row; /* Use horizontal layout */
+        padding: 60px 30px; /* Slightly larger padding */
+    }
+
+    .contents {
+        width: 70%; /* Use more width */
+        margin-left: 15px; /* Add some margin */
+    }
+
+    .contents h3 {
+        font-size: 1.75rem; /* Adjust font size */
+        line-height: 2rem; /* Adjust line height */
+    }
+
+    .text-overlay {
+        left: 50px; /* Adjust position */
+        font-size: 15px; /* Adjust font size */
+    }
+}
+
+/* Styles for larger desktops */
+@media (min-width: 1025px) {
+    .purpleLbel {
+        padding: 80px 30px; /* Maintain original padding */
+    }
+
+    .contents {
+        width: 60%; /* Maintain original width */
+    }
+
+    .contents h3 {
+        font-size: x-large; /* Maintain original font size */
+    }
+
+    .text-overlay {
+        left: 120px; /* Maintain original position */
+        font-size: 16px; /* Maintain original font size */
+    }
+}
+@media (max-width: 768px) {
+    .shopByCategory {
+        height: auto; /* Allow height to adjust */
+        padding: 20px 0; /* Add some padding */
+    }
+    
+    .shop {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .shop h2 {
+        font-size: medium; /* Adjust font size */
+        letter-spacing: 10px; /* Adjust letter spacing */
+    }
+
+    .shop ul {
+        flex-direction: column; /* Stack links vertically */
+        gap: 20px; /* Reduce gap */
+        align-items: center; /* Center the links */
+    }
+
+    .shop ul li {
+        font-size: small; /* Increase font size for readability */
+    }
+
+    .shop ul li a {
+        font-size: small; /* Increase font size for readability */
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .shop h2 {
+        font-size: medium; /* Further adjust font size */
+        letter-spacing: 5px; /* Reduce letter spacing */
+    }
+
+    .shop ul {
+        gap: 15px; /* Further reduce gap */
+    }
+
+    .shop ul li {
+        font-size: medium; /* Increase font size for better readability */
+    }
+
+    .shop ul li a {
+        font-size: medium; /* Increase font size for better readability */
+    }
+}
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .fall2024 {
+        height: 500px; /* Adjust height for smaller screens */
+        justify-content: center; /* Center content vertically */
+    }
+
+    .outerbox {
+        width: 90%; /* Increase width for better visibility */
+        margin-bottom: 30px; /* Adjust bottom margin */
+    }
+
+    .outerbox h3 {
+        font-size: 1.5em; /* Adjust font size */
+        letter-spacing: 5px; /* Reduce letter spacing */
+    }
+
+    .article {
+        font-size: 0.875em; /* Adjust font size */
+        line-height: 1.4em; /* Adjust line height */
+    }
+
+    .shopnow a {
+        font-size: small; /* Adjust font size */
+        padding: 10px 20px; /* Add padding for better click area */
+        
+        border-radius: 5px; /* Optional rounded corners */
+    }
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .grid {
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px; /* Adjust padding for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .parent-1, .parent-2 {
+        height: auto; /* Allow height to adjust based on content */
+        flex-direction: column; /* Stack divs vertically */
+    }
+
+    .div1, .div2, .div3, .div4 {
+        width: 100%; /* Make divs take full width */
+        height: 200px; /* Set a fixed height for each item */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+    }
+
+    .grid h3 {
+        margin: 15px; /* Adjust margins for smaller screens */
+        font-size: medium; /* Adjust font size */
+    }
+
+    .label {
+        height: 80px; /* Adjust height for label */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid2 {
+        padding: 20px; /* Reduce padding */
+        height: auto;  /* Allow the height to adjust automatically */
+    }
+    
+    .parent-3, .parent-4 {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow height to adjust automatically */
+    }
+
+    .div5, .div6, .div7, .div8 {
+        width: 100%; /* Full width for each item */
+        height: 200px; /* Set a specific height for consistency */
+    }
+
+    .grid2 h3 {
+        font-size: 14px; /* Reduce font size */
+        margin: 15px 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+
+
+
+
