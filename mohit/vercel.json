@@ -1,3 +1,15 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
-  }
+  "rewrites": [
+    {
+      "source": "/(.*)", 
+      "destination": "/"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/css/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
+  ],
+  "ignoreRoutes": ["/*.css", "/*.js", "/*.png", "/*.jpg", "/*.jpeg", "/*.gif"]
+}
