@@ -1,4 +1,4 @@
-#Ralph Lauren
+# Ralph Lauren
 1.Landing Page Made by Mohit Sharma(Captain)
 ***
 
@@ -13,7 +13,7 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
  - slick slider
  
 
-##Screenshots
+###Screenshots
 ***
 
 ###Homepage
@@ -51,36 +51,36 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 <!-- Parichay -->
 
 <!-- POLO -->
-###Section1
+### Section1
 ![alt text](./parichay/assets/image.png)
 
-####Section2
+#### Section2
 ![alt text](./parichay/assets/image%20copy.png)
 
-####Section3
+#### Section3
 ![alt text](./parichay/assets/image%20copy%202.png) 
 
-###Section4
+### Section4
 ![alt text](./parichay/assets/image%20copy%203.png)
 
-###Section5
+### Section5
 ![alt text](./parichay/assets/image%20copy%204.png)
 
-###Section6
+### Section6
 ![alt text](./parichay/assets/image%20copy%205.png)
 
-###Section7
+### Section7
 ![alt text](./parichay/assets/image%20copy%206.png)
 
-###Section8
+### Section8
 ![alt text](./parichay/assets/image%20copy%207.png)
 
-###Section9
+### Section9
 ![alt text](./parichay/assets/image%20copy%208.png)
 
-###Section10
+### Section10
 ![alt text](./parichay/assets/image%20copy%209.png)
-###Footer
+### Footer
 ![alt text](mohit/assets/screenshots/8.png)
 
 
