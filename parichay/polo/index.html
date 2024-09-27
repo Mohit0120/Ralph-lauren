@@ -60,6 +60,72 @@
       border: none;
       font-size: x-large;
     }
+
+    /* Media query for tablet screens */
+@media (max-width: 1024px) {
+  .splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+  .text-overlay {
+    font-size: large;
+    bottom: 30px;
+    left: 50px;
+  }
+  .splide {
+    margin: 0 auto;
+  }
+  .splide__arrow {
+    font-size: large;
+    padding: 5px;
+  }
+  .splide__list {
+    gap: 5px;
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+  .text-overlay {
+    font-size: medium;
+    bottom: 20px;
+    left: 30px;
+  }
+  .splide__arrow {
+    font-size: medium;
+    padding: 5px;
+  }
+  .splide__track {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+  .text-overlay {
+    font-size: small;
+    bottom: 15px;
+    left: 20px;
+  }
+  .splide__arrow {
+    font-size: small;
+    padding: 3px;
+  }
+  .splide__list {
+    gap: 3px;
+  }
+  .splide {
+    width: 100%;
+  }
+}
+
   </style>
 
 </head>
@@ -159,19 +225,11 @@
                 <img src="https://www.ralphlauren.global/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/default/dw30a73dae/img/202405/05232024-eu-m-polo-hub/0521_m_polo_coastal_summer_hub_c02b_img.jpg" alt="Photo 5">
                 <div class="text-overlay">Polo Bear Shop</div>
               </li>
-              <li class="splide__slide">
-                <!-- <img src="./assets/Screenshot 2024-09-27 160236.png" alt="Photo 5"> -->
-                <!-- <div class="text-overlay">Polo Bear Shop</div> -->
-              </li>
             </ul>
           </div>
-    
-          <!-- Custom navigation buttons -->
-          <!-- <button class="splide__arrow splide__arrow--prev">Previous</button>
-          <button class="splide__arrow splide__arrow--next">Next</button> -->
         </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+        
         <script>
           document.addEventListener('DOMContentLoaded', function () {
             new Splide('#splide', {
