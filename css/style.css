@@ -106,6 +106,16 @@ nav a h1 {
     letter-spacing: 8px;
 }
 
+nav a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+nav a h1:hover{
+    color: white;
+    text-decoration: none;
+}
+
 .nav-links {
     margin-left: 2.8em;
     display: flex;
