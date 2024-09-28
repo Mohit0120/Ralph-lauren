@@ -1413,8 +1413,9 @@ footer{
       margin-bottom: 3px;
   }
   
-  .list{
-  
+  .list a:hover{
+      text-decoration: underline;
+      color: #0085e4;
   }
   
   .heading_footer h6{
