@@ -94,7 +94,7 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 ![alt text](./parichay/assets/image%20copy%209.png)
 
 ### Footer
-![alt text](mohit/assets/screenshots/8.png)
+![alt text](./assets/screenshots/8.png)
 ***
 
 
@@ -130,8 +130,9 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 
 ### Section10
 ![alt text](./parichay/assets/image%20copy%2019.png)
+
 ### Footer
-![alt text](mohit/assets/screenshots/8.png)
+![alt text](./assets/screenshots/8.png)
 
 ***
 
@@ -148,6 +149,7 @@ A full-featured cloned ralph lauren website with user interface, carousel, and s
 3. ![alt text](./abhi/assets2/Screenshot%203%20modern.png)
 
 ***
+
 ### seasonal
 1. ![alt text](./abhi/assets2/Screenshot%201%20seasonal.png)
 
