@@ -2,7 +2,7 @@
 ***
 ### contributors
    - Mohit Sharma
-   - Parichay dutta biswas
+   - Parichay Dutta Biswas
    - abhishek ganvir
    - shreshtha tiwari
 ***
